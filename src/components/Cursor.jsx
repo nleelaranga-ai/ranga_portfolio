@@ -43,8 +43,8 @@ export default function Cursor() {
 
     const frame = () => {
       raf = requestAnimationFrame(frame);
-      cx += (mx - cx) * 0.11;
-      cy += (my - cy) * 0.11;
+      cx += (mx - cx) * 0.22;
+      cy += (my - cy) * 0.22;
       scale += (targetScale - scale) * 0.10;
       el.style.transform =
         `translate(${cx}px,${cy}px) translate(-50%,-50%) scale(${scale})`;
